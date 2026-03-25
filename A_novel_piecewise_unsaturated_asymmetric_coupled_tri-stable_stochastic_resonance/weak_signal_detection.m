@@ -1,4 +1,5 @@
-clear 
+clear all
+close all
 clc 
 fs=5;
 Ts=1/fs;N=10000;
@@ -9,7 +10,7 @@ a=0.5;b=0.5;lamda=1.2;p=0.2;r=0.2;
 
 A=0.1;
 s=A*cos(2*pi*0.01*t); 
-ff=(1:5000)/N;
+ff=fs*(1:5000)/N;
 
 D=2;
 In=s+sqrt(2*D)*randn(size(t));
@@ -17,7 +18,7 @@ In=s+sqrt(2*D)*randn(size(t));
 xx=ohpalgkt(a,b,lamda,p,r,h,In);
 xd=ohpalgkt(a,b,1,p,r,h,In);
 xp=patlgkt(0.5,0.5,1.2,0.01,2,h,In);
-xc=ctlgkt(1,1,0.3,h,In);%0.7697,1.9985,0.91479
+xc=ctlgkt(1,1,0.3,h,In);
 y0=fft(In); 
 py0=y0.*conj(y0)/N;
 po0=py0(2:5001);
