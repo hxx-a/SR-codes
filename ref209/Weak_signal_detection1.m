@@ -9,7 +9,7 @@ D=0.42;
 p=0.1118;u=3.6023;k=0.1112;r=0.8764;% 低频低噪性能好参数
 %% 时域
 subplot(2,1,1)
-s=0.5*cos(2*pi*0.02*t)+sqrt(2*D)*randn(size(t));
+s=0.2*cos(2*pi*0.02*t)+sqrt(2*D)*randn(size(t));
 plot(t,s,'k');
 ylim([-5 5])
 hold on
