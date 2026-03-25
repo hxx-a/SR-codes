@@ -12,3 +12,5 @@ Ref 209: Adaptive detection of impact signals with two-dimensional piecewise tri
 A novel piecewise unsaturated asymmetric coupled tri-stable stochastic resonance method: A novel piecewise unsaturated asymmetric coupled tri-stable stochastic resonance method and its application in enhanced detection (https://doi.org/10.1016/j.cjph.2025.04.030)
 
 The core concept underlying this code is based on research conducted between 2023 and 2025. The parameter optimization process is carried out using either a quantum genetic algorithm or a quantum particle swarm optimization algorithm. Notably, parameter tuning significantly influences the optimal system output. The effectiveness of the proposed algorithm has been validated through experiments.
+
+For any questions or issues, please feel free to contact 3285510262@qq.com.
